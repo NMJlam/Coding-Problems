@@ -1,0 +1,67 @@
+"""
+1) Explain the question back: 
+Returns True if the bracket is matched in the correct order and every opening bracket has a closing bracket, else returns false
+"""
+
+"""
+2) Clarification:
+- Can we assume that all the characters consist of brackets? 
+- Do we need to account for non-bracket characters if this is the case 
+"""
+
+"""
+3) Test Cases: 
+Input: "[]"
+Output: True 
+
+Input: "[{}]"
+Output: True 
+
+Input: "[]])"
+Output: False
+
+Input: "("
+Output: False
+"""
+
+"""
+4) Pseudo code: 
+
+for bracket in string: 
+    if bracket is open: 
+        add to stack 
+    if bracket is close and of the same type: -> for the same type use a hash table.. 
+        pop from stack
+    else: 
+        return false 
+return True
+
+Time complexity: O(N), N is the length of the string 
+Auxillary Space Complexity: O(N)
+"""
+
+def isValid(s: str) -> bool: 
+
+    openVSclose = { "}" : "{", 
+                   ")" : "(",
+                   "]" : "["}
+    
+    stack = []
+    
+    for bracket in s: 
+
+        if bracket in openVSclose.values(): # O(1) because the length of the list is constant
+            stack.append(bracket)
+        
+        elif stack and openVSclose[bracket] == stack[-1]:
+            stack.pop()
+        
+        else:
+            return False
+    
+    if len(stack) == 0:
+        return True
+    else: 
+        return False
+    
+print(isValid("[]"))

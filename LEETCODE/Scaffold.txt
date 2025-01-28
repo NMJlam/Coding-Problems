@@ -1,0 +1,21 @@
+SCAFFOLD 
+
+1) Explain the question back to the interviewer 
+2) Ask for clarification: 
+    - Input validation 
+    - Edge cases 
+    - Assumptions 
+3) Build Test Cases: 
+    - Typical output 
+    - Invalid output 
+    - Edge Cases 
+4) Pseudo code the approach
+    - Explain the time complexity of each section 
+5) Code the solution 
+    - Validate the code as are you are moving along 
+
+IMPORTANT 
+
+- While LeetCode is asking you for the most efficient solution 
+- The coding interview is actually asking for you to show your problem solving approach 
+==> Practice for the coding interview not LeetCode
