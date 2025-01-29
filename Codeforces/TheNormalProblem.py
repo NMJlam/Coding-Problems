@@ -23,7 +23,8 @@ def convert(a: str) -> str:
     return b 
 
 
-t = int(input())
+# when the input has successive rows you can take multiple inputs at a time by using 2 input functions
+t = int(input()) 
 
 for _ in range(t): 
 
