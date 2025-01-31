@@ -38,13 +38,6 @@ def happy(ith_days: int) -> int:
     
     print(happy_days)
 
-
-
-
-
-
-
-
 #take the test cases as an input: 
 tests = int(input())
 for _ in range(tests): 
