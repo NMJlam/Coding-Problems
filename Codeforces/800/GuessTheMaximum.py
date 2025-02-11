@@ -3,9 +3,8 @@ Problem Link: https://codeforces.com/problemset/problem/1979/A
 """
 
 """
-Takeaway: To find the min-max of a sequence of subarrays you just need to iterate over adjacent elements. hello
+Takeaway: To find the min-max of a sequence of subarrays you just need to iterate over adjacent elements. 
 """
-
 
 
 tests = int(input())
