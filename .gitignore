@@ -15,3 +15,7 @@ yarn-error.log*
 
 # System files
 Thumbs.db
+
+# Account for cpp executables:
+CPHandbook/*.o
+CPHandbook/*.out
