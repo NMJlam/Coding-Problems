@@ -1,6 +1,9 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;  // Output "Hello, World!" with a newline
-    return 0;  // Indicate that the program ended successfully
+    int x;
+    cin >> x;
+    cout << "You entered: " << x << endl;
+    return 0;
 }
