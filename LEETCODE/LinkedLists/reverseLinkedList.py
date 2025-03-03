@@ -8,16 +8,28 @@ link: https://leetcode.com/problems/reverse-linked-list/
 #         self.val = val
 #         self.next = next
 
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 
-"""
-Iteratively: append the next elements to a stack and then pop the elements from the stack
-Recursively with DP: Recursive and then as you move through the recursive stack you will have to make a new linked list
+class Solution(object):
+    def reverseList(self, head):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
 
-Base case: 
-    if node.next is None: 
-Recursive case: 
-    if node.next is not none: recursive
+        curr = head 
+        prev = None 
 
-Both methods would use the same storage so either one is fine. 
-"""
+        while curr: 
+            
+            store = curr.next
+            curr.next = prev 
 
+            prev = curr
+            curr = store
+        
+        return prev
